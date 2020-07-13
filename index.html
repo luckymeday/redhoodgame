@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>the Little Red Hood</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <section>
+    <blockquote class="intro text-center">
+      <p>
+        I've lost on my way to my grandmother's house in the night.<br>
+        Can you help me to collect fireflies to light my way.<br>
+        But watch out the scary wolf!
+      </p>
+
+    </blockquote>
+
+    <div class="input-main">
+      <input type="text" id="user" placeholder="What's your name?" style="margin-right: 50px;">
+      <button class="input-group-addon" onclick="registerUser()" style="margin-right: 50px;"> Submit</button>
+      <button class="first-start" id="start" onclick="reset()" style="margin-right: 50px;">Let's start!</button>
+    </div>
+  </section>
+
+
+  <section class="data-main">
+    <div class="data">
+      <ul>
+        <li id="timeArea">Seconds Remaining: 30</li>
+        <li id="scoreArea">Score: 0 </li>
+        <li id="highScoreArea">High Score: 0</li>
+        <li id="round"></li>
+    </div>
+    <div>
+      <button id="reset" onclick="reset()" class="reset">Reset</button>
+    </div>
+  </section>
+
+
+
+  <script src="game.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
